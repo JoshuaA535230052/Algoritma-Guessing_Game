@@ -7,23 +7,21 @@ using namespace std;
 int main(){
 	
 	int number, guess;
-	char play, yes, no;
 	int n;
 	
-	again:; 
 	
 		srand(time(NULL));	
 		number = rand() % 100+1;
-		
+	cout<<number;	
 	cout<<"Guess the number between 1 to 100!"<<endl;
 	cout<<"You only got 10 tries, so goodluck!" <<endl;
 	cout<<endl;
 	
 		
-			for (int i=1; i<=10; i++)
+			for (int i=1; i<=11; i++)
 			{
 			
-				cout<<"Numbers: " ;
+				cout<<i <<". " <<"Numbers: " ;
 				cin>>guess;
 				cout<<endl;
 		
@@ -42,8 +40,9 @@ int main(){
 						cout<<"Selamat!!! *clap* *clap* *clap* " <<endl;
 						cout<<endl;
 					cout<<"It took you a total of: " <<i<<" tries" <<endl;
-					i = 10;
+					i = 11;
 					}
+					
 					if (i==10)
 					{
 					cout<<endl;
@@ -52,6 +51,7 @@ int main(){
 					cout<<"You Got a Skill Issue fr! ";
 					cout<<"BTW The number is " <<number <<endl;
 					cout<<"Well next time bye bye!" <<endl;
+						break;
 					}
 			}
 		
